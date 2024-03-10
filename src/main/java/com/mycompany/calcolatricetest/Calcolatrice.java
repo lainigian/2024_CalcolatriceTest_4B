@@ -58,4 +58,24 @@ public class Calcolatrice
         }
         return f;
     }
+
+    
+interface Function {
+  void stampa(String testo);
+}
+    
+    public static void fibonacci(int endNumber, Function func)
+    {
+        int n_1=0;
+        int n_2=1;
+        int scambio = 0;
+            for(int i=0;i<endNumber;i++)
+            {
+                func.stampa("Numero " + n_2 + '\n');
+                scambio = n_1 + n_2;
+                n_1 = n_2;
+                n_2=scambio;
+            }
+    }
+}
 }
