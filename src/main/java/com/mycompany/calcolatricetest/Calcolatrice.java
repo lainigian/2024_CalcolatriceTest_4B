@@ -38,8 +38,11 @@ public class Calcolatrice
         return x;
     }
     
-    public int[] fibonacci(int n)
+    public int[] fibonacci(int n) throws FibonacciException
     {
+        if(n<=0)
+            throw new FibonacciException();
+        
         int[] f=new int[n];
         int n_1=1;
         int n_2=1;

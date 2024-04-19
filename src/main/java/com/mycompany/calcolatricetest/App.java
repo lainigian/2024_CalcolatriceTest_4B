@@ -13,11 +13,6 @@ public class App {
     public static void main(String[] args)
     {
         Calcolatrice c1=new Calcolatrice();
-        int f[];
-        f=c1.fibonacci(10);
-        for(int i=0;i<f.length;i++)
-        {
-            System.out.print(f[i]+"\t");
-        }
+        System.out.println(c1.dividi(10, 0));
     }
 }
